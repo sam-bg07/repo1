@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: rgb(255, 247, 247);
+  background-color: rgb(26, 19, 19);
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(13, 7, 7, 0.7);
+}
+.main {
+  height: 100%;
+  width: 70%;
+  margin: 0px auto;
+  display: grid;
+  place-items: center;
+}
+
+.div1,
+.div1 p {
+  display: flex;
+  row-gap: 1rem;
+  width: 100%;
+  margin: 10px auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+.maincontainer {
+  display: grid;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 280px));
+  gap: 15px;
+  width: 90%;
+}
+.div2 {
+  /* width: 270px; */
+  /* height: 390px; */
+  background-color: white;
+  /* margin: 10px 20px; */
+  border-radius: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  box-shadow: rgba(253, 253, 255, 0.345) 0px 0px 10px 3px;
+  transition: all 0.3s linear;
+}
+
+.div2:hover {
+  border: 4px solid rgba(0, 0, 0, 0.841);
+  box-shadow: rgba(6, 6, 21, 0.573) 0px 0px 15px 4px;
+  transform: scale(1.05);
+}
+.box1 a img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 1.7rem;
+  border-top-right-radius: 1.7rem;
+  transition: all 0.3s linear;
+}
+
+.box1 a img:hover {
+  transform: scale(1.05);
+  border: 3px solid black;
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 0.7rem;
+  background-color: rgba(13, 7, 7, 0.397);
+}
+
+.content .left img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1.5rem;
+  transition: all 0.2s linear;
+}
+
+.left img:hover {
+  transform: scale(1.25);
+  border: 2.5px solid black;
+}
+.box3 {
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(114, 66, 66, 0.373);
+  border-bottom-left-radius: 1.7rem;
+  border-bottom-right-radius: 1.7rem;
+  /* align-items: center; */
+}
+
+.content {
+  /* margin: 2rem; */
+
+  display: flex;
+  width: 70%;
+  column-gap: 0.7rem;
+}
+
+button {
+  padding: 0.1rem;
+  margin: 0.3rem 0px;
+  height: 60%;
+  transition: all 0.2s linear;
+}
+button:hover {
+  color: white;
+  background: black;
+  transform: scale(1.15);
+}
